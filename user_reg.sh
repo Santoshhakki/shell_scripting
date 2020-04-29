@@ -18,3 +18,11 @@ else
 fi
 
 
+read -p "enter the email : " email
+pat3="^[0-9a-zA-Z.+_-]*@[0-9a-zA-Z]*.(com|.in|co.in|net)$"
+if [[ $email =~ $pat3 ]]
+then
+        echo valid email;
+else
+        echo invalid email;
+fi
